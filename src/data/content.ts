@@ -22,13 +22,13 @@ const fr = {
   hero: {
     status: 'Stage PFE recherché · 6 mois · dès février 2027',
     role: 'Étudiant en master cybersécurité · Nabeul, Tunisie',
-    tagline: 'Je documente comment une attaque fonctionne et ce qu’une équipe de défense peut en apprendre. Mes preuves : 16 write-ups de labs publics et un PFE Java EE intégrant des contrôles de sécurité.',
+    tagline: 'Je documente comment une attaque fonctionne et ce qu’une équipe de défense peut en apprendre. Mes preuves : 16 write-ups de labs publics et un stage de fin de licence en Java EE intégrant des contrôles de sécurité.',
     ctaContact: 'Voir 3 cas concrets', ctaCv: 'Télécharger le CV (FR)',
     briefTitle: 'En bref pour le recrutement',
     brief: [
       { label: 'Projet recherché', value: 'Tests d’intrusion et analyse défensive, avec encadrement.', href: '' },
       { label: 'Point de départ', value: '2 labs publiés + 1 projet de stage à découvrir ci-dessous.', href: '#projects' },
-      { label: 'Langues', value: 'Arabe : maternelle · Français : courant · Anglais : courant à l’écrit, bonnes bases à l’oral.', href: '' },
+      { label: 'Langues', value: 'Arabe : maternelle · Français : courant · Anglais : courant à l’écrit, bonnes bases à l’oral.', href: '' },
       { label: 'Contact direct', value: profile.email, href: `mailto:${profile.email}` },
     ],
     stats: [
@@ -40,38 +40,38 @@ const fr = {
   projects: {
     title: 'Trois cas pour évaluer mon travail',
     intro: 'Deux comptes rendus de laboratoires consultables et un projet de stage. Les exercices de sécurité sont réalisés en environnement d’entraînement.',
-    catalog: 'Pour aller plus loin : 16 write-ups publiés, dont 14 sur TryHackMe et 2 sur HackTheBox.',
+    catalog: 'Pour aller plus loin : 16 write-ups publiés, dont 14 sur TryHackMe et 2 sur HackTheBox.',
     catalogLink: 'Parcourir tous les comptes rendus',
     items: [
       {
-        id: 'active-directory', title: 'Active Directory : retracer une compromission',
+        id: 'active-directory', title: 'Active Directory : retracer une compromission',
         summary: 'Comment un service exposé peut compromettre un serveur qui gère les comptes d’un domaine Windows.',
         year: 'VulnNet: Active', kind: 'Lab publié', featured: true,
         points: [
-          'Démarche : énumération Redis/SMB, capture et cassage d’identifiants, détournement d’un script partagé, élévation de privilèges jusqu’à SYSTEM.',
-          'Restitution : chaîne d’attaque documentée, avec pistes côté défense — restreindre Redis, surveiller les connexions SMB sortantes et protéger les scripts planifiés.',
+          'Démarche : énumération Redis/SMB, capture et cassage d’identifiants, détournement d’un script partagé, élévation de privilèges jusqu’à SYSTEM.',
+          'Restitution : chaîne d’attaque documentée, avec pistes côté défense — restreindre Redis, surveiller les connexions SMB sortantes et protéger les scripts planifiés.',
         ],
         tags: ['Active Directory', 'Windows', 'Responder', 'Hashcat', 'Remédiation'],
         link: reports.ad, linkLabel: 'Lire le cas Active Directory',
       },
       {
-        id: 'web-security', title: 'Sécurité web : d’un paramètre à une exécution de code',
+        id: 'web-security', title: 'Sécurité web : d’un paramètre à une exécution de code',
         summary: 'Suivre une faille dans une page PHP jusqu’à ses conséquences sur le système.',
         year: 'Dogcat', kind: 'Lab publié', featured: false,
         points: [
-          'Démarche : inclusion locale de fichiers (LFI), contournement de filtre et empoisonnement des journaux Apache.',
-          'Résultat en laboratoire : exécution de code, élévation de privilèges Linux puis sortie d’un conteneur Docker, étapes et commandes documentées.',
+          'Démarche : inclusion locale de fichiers (LFI), contournement de filtre et empoisonnement des journaux Apache.',
+          'Résultat en laboratoire : exécution de code, élévation de privilèges Linux puis sortie d’un conteneur Docker, étapes et commandes documentées.',
         ],
         tags: ['PHP', 'LFI', 'Linux', 'Docker', 'Élévation de privilèges'],
         link: reports.web, linkLabel: 'Lire le cas de sécurité web',
       },
       {
-        id: 'secure-development', title: 'Développement : protéger l’authentification',
+        id: 'secure-development', title: 'Développement : protéger l’authentification',
         summary: 'Un PFE de licence chez Tunisie Telecom pour relier développement web et contrôles de sécurité.',
         year: 'Fév. – juil. 2025', kind: 'Stage · code non publié ici', featured: false,
         points: [
-          'Application web de gestion de l’assurance maladie des employés : Java EE (JSP/Servlets), MySQL et JDBC/DAO, avec espaces Administrateur et Employé distincts.',
-          'Contrôles intégrés : requêtes préparées dans l’authentification, validation des entrées côté serveur, hachage BCrypt, réinitialisation par e-mail et invalidation des sessions à la déconnexion.',
+          'Application web de gestion de l’assurance maladie des employés : Java EE (JSP/Servlets), MySQL et JDBC/DAO, avec espaces Administrateur et Employé distincts.',
+          'Contrôles intégrés : requêtes préparées dans l’authentification, validation des entrées côté serveur, hachage BCrypt, réinitialisation par e-mail et invalidation des sessions à la déconnexion.',
         ],
         tags: ['Java EE', 'MySQL', 'BCrypt', 'Validation serveur', 'Sessions'],
         link: profile.cv.fr, linkLabel: 'Consulter les détails dans le CV (FR)',
@@ -82,7 +82,7 @@ const fr = {
     title: 'Ce que je peux apporter à un stage',
     body: [
       'Je suis étudiant en master cybersécurité à la Faculté Leaders Nabeul, après une licence en sciences de l’informatique à la Faculté des Sciences de Tunis.',
-      'Avec l’encadrement de votre équipe, je souhaite contribuer à des tests d’intrusion, à l’analyse de scénarios d’attaque et à la rédaction de constats exploitables : étapes reproductibles, preuves et pistes de remédiation.',
+      'Avec l’encadrement de votre équipe, je souhaite contribuer à des tests d’intrusion, à l’analyse de scénarios d’attaque et à la rédaction de constats exploitables : étapes reproductibles, preuves et pistes de remédiation.',
       'Mes labs développent ma compréhension des attaques ; mon expérience Java EE m’aide à les relier aux contrôles applicatifs. La détection Wazuh/Sysmon et la mise en correspondance MITRE ATT&CK relèvent de ma pratique personnelle en laboratoire.',
     ],
     facts: [
@@ -115,9 +115,9 @@ const fr = {
       },
       {
         name: 'Détection et environnement de lab', icon: 'shield',
-        context: 'Pratique personnelle : SIEM Wazuh, Sysmon et correspondance avec MITRE ATT&CK ; infrastructure ESXi, Kali Linux et Sophos/VPN SSL.',
+        context: 'Pratique personnelle : SIEM Wazuh, Sysmon et correspondance avec MITRE ATT&CK ; infrastructure ESXi, Kali Linux et Sophos/VPN SSL.',
         items: ['Wazuh', 'Sysmon', 'MITRE ATT&CK', 'ESXi', 'Kali Linux', 'Sophos'],
-        link: '#active-directory', linkLabel: 'Lire des pistes défensives dans un write-up',
+        link: '#active-directory', linkLabel: 'Voir les pistes défensives du cas AD',
       },
     ],
   },
@@ -125,7 +125,7 @@ const fr = {
     title: 'Parcours', workTitle: 'Expérience professionnelle', eduTitle: 'Formation',
     work: [
       { role: 'Monteur vidéo & assistant technique', org: 'Almourabi E-learning', period: 'Avr. – sept. 2026', points: ['10 à 18 vidéos pédagogiques montées par jour, jusqu’à 22 ; préparation du matériel et résolution des incidents pendant les cours.'] },
-      { role: 'Stagiaire développeur web — PFE de licence', org: 'Tunisie Telecom · Nabeul', period: 'Fév. – juil. 2025', points: ['Application de gestion de l’assurance maladie des employés en Java EE/MySQL.', 'Authentification, validation serveur, mots de passe et sessions : contrôles présentés dans le cas de développement ci-dessus.'] },
+      { role: 'Stagiaire développeur web — PFE de licence', org: 'Tunisie Telecom · Nabeul', period: 'Fév. – juil. 2025', points: ['Application de gestion de l’assurance maladie des employés en Java EE/MySQL.', 'Authentification, validation serveur, mots de passe et sessions : contrôles présentés dans le cas de développement ci-dessus.'] },
     ],
     education: [
       { degree: 'Master en informatique — Spécialisation cybersécurité', school: 'Faculté Leaders Nabeul', period: '2025 – 2027', note: 'En cours' },
@@ -134,7 +134,7 @@ const fr = {
     languagesTitle: 'Langues',
     languages: [
       { name: 'Arabe', level: 'Langue maternelle' },
-      { name: 'Français', level: 'Courant (écrit et oral)' },
+      { name: 'Français', level: 'Courant' },
       { name: 'Anglais', level: 'Courant à l’écrit, bonnes bases à l’oral' },
     ],
   },
@@ -154,7 +154,7 @@ const en: Content = {
   nav: { about: 'Profile', skills: 'Skills', projects: 'Selected work', experience: 'Background', contact: 'Contact' },
   switchLabel: 'FR', switchHref: 'fr/',
   hero: {
-    status: 'Seeking a 6-month final-year internship · February 2027',
+    status: 'Seeking a 6-month final-year internship · from February 2027',
     role: 'Cybersecurity master’s student · Nabeul, Tunisia',
     tagline: 'I document how attacks work and what defenders can learn. My evidence: 16 public lab write-ups and a Java EE internship implementing application security controls.',
     ctaContact: 'See 3 selected cases', ctaCv: 'Download CV (EN)',
@@ -251,7 +251,7 @@ const en: Content = {
         name: 'Detection and lab environment', icon: 'shield',
         context: 'Personal practice: Wazuh SIEM, Sysmon and MITRE ATT&CK mapping; an ESXi, Kali Linux and Sophos/SSL VPN environment.',
         items: ['Wazuh', 'Sysmon', 'MITRE ATT&CK', 'ESXi', 'Kali Linux', 'Sophos'],
-        link: '#active-directory', linkLabel: 'Read defensive ideas in a write-up',
+        link: '#active-directory', linkLabel: 'See defensive ideas in the AD case',
       },
     ],
   },
@@ -268,7 +268,7 @@ const en: Content = {
     languagesTitle: 'Languages',
     languages: [
       { name: 'Arabic', level: 'Native' },
-      { name: 'French', level: 'Fluent (written and spoken)' },
+      { name: 'French', level: 'Fluent' },
       { name: 'English', level: 'Fluent in writing, good basic speaking skills' },
     ],
   },
